@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+header {
+    background-color: rgb(42, 37, 37);
+    color:white;
+    size: 20px;
+    position: relative;
+	width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(161, 140, 140);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav ul {
+    padding: 25px;
+}
+
+nav ul a {
+    padding:15px;
+    color:white;
+    text-decoration: solid;
+    font-size: large;
+}
+
+footer {
+    background-color: rgb(42, 37, 37);
+    color:white;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+}
+
+#sale {
+    color: rgb(146, 0, 0);
+}
+
+#sucre {
+    color:rgb(3, 53, 134);
+}
+
+img {
+    width: 33%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+img:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+table {
+    width: 100%;
+    font-size: large;
+    border:solid 1px black;
+}
+
+table th, td {
+    border: solid 1px black;
+}
+
+table tr:nth-child(2) td:first-child {
+    color:yellow;
+}
+
+table tr:nth-child(3) td:first-child {
+    color:azure;
+}
+
+table tr:nth-child(4) td:first-child {
+    color: brown;
+}
+
+.addrecette {
+    margin: 50px 0;
+}
+
+.addrecette label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.addrecette input {
+    margin-bottom: 10px;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+    margin: 50px 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
